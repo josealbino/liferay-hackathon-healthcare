@@ -1,0 +1,8 @@
+{
+    "dynamic-data-mapping-type-radio@2.0.12/radio.es": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy", "./radio.soy"]
+    },
+    "dynamic-data-mapping-type-radio@2.0.12/radio.soy": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy"]
+    }
+}

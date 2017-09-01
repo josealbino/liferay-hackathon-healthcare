@@ -1,0 +1,80 @@
+{namespace DDMRadio}
+
+/**
+ * Defines the delegated template for the radio field.
+ */
+{deltemplate ddm.field variant="'radio'"}
+	{call .render data="all" /}
+{/deltemplate}
+
+/**
+ * Prints the DDM form radio field.
+ */
+{template .render}
+	{@param? dir: string}
+	{@param inline: bool}
+	{@param label: string}
+	{@param name: string}
+	{@param options: list<[label: string, value: string]>}
+	{@param? predefinedValue: string}
+	{@param readOnly: bool}
+	{@param? required: bool}
+	{@param showLabel: bool}
+	{@param? tip: string}
+	{@param value: string}
+	{@param visible: bool}
+
+	{let $displayValue: $value ? $value : $predefinedValue /}
+
+	{let $disabled kind="attributes"}
+		{if $readOnly}
+			disabled
+		{/if}
+	{/let}
+
+	<div class="form-group{$visible ? '' : ' hide'}" data-fieldname="{$name}">
+		{if $showLabel}
+			<label class="control-label">
+				{$label}
+
+				{if $required}
+					<span class="icon-asterisk text-warning"></span>
+				{/if}
+			</label>
+
+			{if $tip}
+				<p class="liferay-ddm-form-field-tip">{$tip}</p>
+			{/if}
+		{/if}
+
+		<div class="clearfix radio radio-options">
+			{foreach $option in $options}
+				{let $checked kind="attributes"}
+					{if $option.value == $displayValue}
+						checked
+					{/if}
+				{/let}
+
+				{if not $inline}
+					<div class="radio">
+				{/if}
+
+				<label class="{$inline ? ' radio-inline' : ''} radio-option-{$option.value}" for="{$name}_{$option.value}">
+					<input {$checked} class="field toggle-card" dir="{$dir or ''}" {$disabled} id="{$name}_{$option.value}" name="{$name}" type="radio" value="{$option.value}" />
+					
+					<div class="toggle-card-container">
+						<div class="toggle-card-cell">
+							<div class="toggle-card-label">
+								<span> {$option.label}</span>
+							</div>
+						</div>
+					</div>
+				</label>
+
+				{if not $inline}
+					</div>
+				{/if}
+			{/foreach}
+		</div>
+	</div>
+{/template}
