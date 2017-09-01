@@ -1,0 +1,197 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+/* inject:imports */
+/* endinject */
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+body {
+    font-family: SourceSansPro !important;
+}
+a {
+    color: #0b5fff;
+    &:focus {
+        color: #004ad7;
+    }
+}
+#wrapper {
+    padding-top: 0;
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+.btn-lg {
+    padding: 8px 13px;
+}
+.form-group {
+    margin-bottom: 24px;
+    .control-label {
+        color: #272833;
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+    
+    .form-control {
+        border-width: 1px;
+        border-radius: 4px;
+        background-color: #f1f2f5;
+        border-color: #e7e7ed;
+        padding: 0 20px 0 16px;
+        color: #272833;
+        &:focus {
+            background-color: rgba(113, 162, 255, 0.19);
+            border-color: #71a2ff;
+        }
+        &::-webkit-input-placeholder {
+            color: #a7a9bc;
+        }
+    }
+}
+.btn {
+    color: #6b6c7e;
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn-primary {
+    background-color: transparent;
+    border-color: #cdced9;
+    &:hover {
+        background-color: #f7f8f9;
+        color: #6b6c7e;
+        border-color: #cdced9;
+    }
+}
+.portlet-decorate .portlet-content {
+    border-color: transparent;
+    background: transparent;
+}
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 125px;
+    width: 100%;
+    height: 128px;
+    padding: 0 108px;
+    background-color: rgba(241, 242, 245, 0.5);
+}
+.powered-by {
+    position: absolute;
+    left: 108px;
+    font-size: 21px;
+    color: #9b9b9b;
+    margin: 0;
+}
+.footer-links {
+    list-style-type: none;
+    li {
+        display: inline-block;
+        margin-right: 34px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.logo-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    .logo {
+        width: 73px;
+        height: 64px;
+    }
+    p {
+        font-size: 42px;
+        font-weight: bold;
+        color: #9b9b9b;
+        line-height: 0.83;
+    }
+    span {
+        font-size: 24px;
+        color: #9b9b9b;
+    }
+}
+header {
+    display: flex;
+    padding: 0 135px;
+    width: 100%;
+    height: 64px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.lfr-nav-item.lfr-nav-deletable.lfr-nav-sortable {
+    a {
+        color: #0b5fff;
+        font-weight: 600;
+        font-size: 14px;
+        opacity: 0.5;
+    }
+}
+.lfr-nav-item.dropdown.selected.active.lfr-nav-deletable.lfr-nav-sortable {
+    a {
+        opacity: 1;
+    }   
+}
+.hide-accessible {
+    display: none;
+}
+.breadcrumb {
+    li {
+        font-size: 14px;
+        color: #6b6c7e;
+        text-transform: capitalize;
+    }
+    .active {
+        color: #272833;
+    }
+}
+.portlet-forms label {
+    width: 100%;
+}
+.toggle-card-container {
+    width: 100%;
+    height: 96px;
+    box-shadow: none;
+    border: solid 1px rgba(35, 50, 64, 0.1) !important;
+    border-radius: 4px;
+    display: flex;
+    padding: 0 30px !important;
+}
+.toggle-card:checked ~ .toggle-card-container {
+    background-color: #f0f5ff;
+    border: 1px solid #71a2ff !important;
+}
+.toggle-card-cell {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    label {
+        height: auto;
+        padding-top: 0;
+        padding-left: 16px;
+    }
+}
+.toggle-card-label {
+    font-size: 19px;
+}
+.toggle-card-icon {
+    margin: 0;
+}
+.portlet-forms .ddl-form-basic-info .ddl-form-name {
+    text-align: center;
+}
+.multi-step-progress-bar {
+    display: none;
+}
+.ddl-form-builder-app {
+    border-radius: 6px;
+    background-color: #ffffff;
+    margin-top: 36px;
+    box-shadow: 0 0 20px 0 rgba(0, 5, 61, 0.1);
+    padding: 30px 50px;
+}
+body.private-page {
+    background-color: #f7f8f9;
+}

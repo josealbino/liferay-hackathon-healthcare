@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+    font-family: SourceSansPro !important;
+}
+
+a {
+    color: #0b5fff ;
+
+   &:focus {
+        color: #004ad7 ;
+    }
+}
+
+#wrapper {
+    padding-top: 0;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-lg {
+    padding: 8px 40px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+
+   .control-label {
+        color: #272833 ;
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+    
+   .form-control {
+        border-width: 1px;
+        border-radius: 4px;
+        background-color: #f1f2f5 ;
+        border-color: #e7e7ed ;
+        padding: 0 20px 0 16px;
+        color: #272833 ;
+
+       &:focus {
+            background-color: rgba(113, 162, 255, 0.19);
+            border-color: #71a2ff ;
+        }
+
+       &::-webkit-input-placeholder {
+            color: #a7a9bc ;
+        }
+    }
+}
+
+.btn-primary {
+    background-color: #0b5fff ;
+    border-color: #0b5fff ;
+
+   &:hover {
+        background-color: #004ad7 ;
+        border-color: #004ad7 ;
+    }
+}
+
+.portlet-decorate .portlet-content {
+    border-color: transparent;
+    background: transparent;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 125px;
+    width: 100%;
+    height: 128px;
+    padding: 0 108px;
+    background-color: rgba(241, 242, 245, 0.5);
+}
+
+.powered-by {
+    position: absolute;
+    left: 108px;
+    font-size: 21px;
+    color: #9b9b9b ;
+    margin: 0;
+}
+
+.footer-links {
+    list-style-type: none;
+
+   li {
+        display: inline-block;
+        margin-right: 34px;
+
+       &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.logo-signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+
+   .logo {
+        width: 73px;
+        height: 64px;
+    }
+
+   p {
+        font-size: 42px;
+        font-weight: bold;
+        color: #9b9b9b ;
+        line-height: 0.83;
+    }
+
+   span {
+        font-size: 24px;
+        color: #9b9b9b ;
+    }
+}
