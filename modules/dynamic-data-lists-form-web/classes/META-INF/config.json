@@ -1,0 +1,56 @@
+{
+    "dynamic-data-lists-form-web@1.2.0/notification/form-entry-add-body.es": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy", "./form_entry_add_body.soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/notification/form-entry-add-body.soy": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/autocomplete.es": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy", "./autocomplete.soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/autocomplete.soy": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/calculate.es": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy", "./calculate.soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/calculate.soy": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/calculator.es": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy", "./calculator.soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/calculator.soy": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/data-provider-parameter.es": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy", "./data-provider-parameter.soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/data-provider-parameter.soy": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/field-options-toolbar.es": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy", "./field-options-toolbar.soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/field-options-toolbar.soy": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/rule-builder.es": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy", "./rule-builder.soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/rule-builder.soy": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/rule.es": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy", "./rule.soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/rule.soy": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/sidebar.es": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy", "./sidebar.soy", "./field-options-toolbar.soy"]
+    },
+    "dynamic-data-lists-form-web@1.2.0/admin/templates/sidebar.soy": {
+        "dependencies": ["exports", "metal-component/src/all/component", "metal-soy/src/Soy"]
+    }
+}
